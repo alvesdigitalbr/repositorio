@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente visualizar em diferentes dispositivos</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamos aprender a botar áudio em HTML5</p>
+    <p>A maneira mais simples é botando o code do áudio, e você vai botar dois parâmetros: autoplay e controls</p>
+    <audio src="midia/ardeoutravez.mp3" controls></audio>
+    <h2>Outra maneira de reproduzir áudio</h2>
+    <p>temos outra maneira mais profissional, devido ela ter acessibilidade para mais navegadores. Você pode usar o source:src em ordem de cima para baixo dentro da tag áudio.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/ardeoutravez.mp3" type="audio/mpeg">
+        <source src="midia/ardeoutravez.ogg" type="audio/ogg">
+        <source src="midia/ardeoutravez.wav" type="audio/wav">
+    </audio>
+    <p>Caso você não conseguiu acessar a música peço desculpas! Deixei o download disponível no "Clique Aqui" logo abaixo obrigado!</p>
+    <a href="midia/ardeoutravez.mp3" target="_blank" download="ardeoutravez.mp3" type="audio/mpeg">Clique Aqui</a>
+    <h1>Vídeos no meu servidor</h1>
+    <p>Este vídeo está sendo reproduzido no meu servidor, temos o não profissional que é vídeo src</p>
+    <video src="midia/pesado-natureza-compc.mp4" controls></video>
+    <p>Agora vamos usar o de forma profissional(isso é para acessibilidade)</p>
+    <video width="600" controls>
+        <source src="midia/pesado-natureza-compc.mp4" type="video/mp4">
+        <source src="midia/pesado-natureza-compc.mkv" type="video/mkv">
+        <source src="midia/pesado-natureza-compc.webm" type="video/webm">
+    </video>
+    <p>Temos aqui o link caso seu navegador não teve compatibilidade com o vídeo <a href="midia/pesado-natureza-compc.mp4" target="_blank">Clique Aqui</a> </p>
+    <h1>inserindo vídeo do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=e3AF5D1LuKj_jQo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div style="background-color: black;">
+    <hr>
+    <h1 style="font-size: 90px; color: white;">Desafio</h1>
+    </div>
+    <h2>Vídeos legias</h2>
+    
+</body>
+</html>

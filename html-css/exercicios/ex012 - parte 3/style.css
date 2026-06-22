@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+    background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+h1 {
+    color:aliceblue
+}
+h2{
+    color: wheat;
+}
+p { 
+    color: thistle;
+}

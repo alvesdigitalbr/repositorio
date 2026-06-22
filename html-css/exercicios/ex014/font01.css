@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'myheart';
+    src: url('fonts/myheart.otf') format(opentype), url('fonts/myheart.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.kaushan-script-regular {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.myheart {
+    font-family: 'myheart', cursive;
+    font-size: 3em;
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+main {
+    background-color: aquamarine;
+    width: 600px;
+}
+main p {
+    text-align: justify;
+    font: normal 1em Arial, Verdana, Serif;
+    text-indent: 2em;
+}

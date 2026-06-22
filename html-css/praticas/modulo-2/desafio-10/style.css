@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@font-face {
+    font-family: titulo;
+    src: url(fonts/idroid.otf) format('opentype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+body {
+    background-color: #c5ebd6;
+    
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.461);
+    background-image: linear-gradient(to bottom, #2fa866, #1a5c37);
+    z-index: 99;     
+    height: 200px;
+    padding: 10px;
+    margin: 10px 20px 0px 20px;
+    border-radius: 15px;
+}
+#title {
+    font-family: titulo;
+    font-weight: normal;
+    color: #ffffff;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-size: 2.7em;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.419);
+}
+#subtitle {
+    color: #ffffff;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+.navbar {
+    padding: 10px;
+    
+}
+.navbar a {
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 550;
+    text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.419);
+}
+main {
+    display: block;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.461);
+    margin: auto;
+    max-width: 1100px;
+    min-width: 320px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main a {
+    color: #1a5c37;
+    font-weight: bold;
+}
+main p {
+    font-size: 1.2em;
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding: 10px;
+    text-align: justify;
+}
+main img {
+    width: 100%;
+
+}
+div.video {
+    display: block;
+}
+iframe {
+    padding: 20px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+}
+article {
+    display: block;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-family: titulo;
+    color: #1a5c37;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    background-image: linear-gradient(to right, #2fa86523, #1a5c3700);
+}
+h2{
+    font-size: 1.6em;
+    font-family: titulo;
+    color: #2fa866;
+    margin-block-start: 0.87em;
+    margin-block-end: 0.87em;
+}
+
+aside {
+    display: block;
+    background-color: #83e1ad;
+    text-align: justify;
+}
+aside h3 {
+    padding: 10px;
+    font-size: 1.6em;
+    font-weight: normal;
+    font-family: titulo;
+    color: #ffffff;
+    background-color: #1a5c37;
+    margin: 5px 0px 20px 0px;
+    border-radius: 5px;
+}
+aside p {
+    font-size: 1.2em;
+    padding: 10px;
+    text-indent: 30px;
+    line-height: 1.7em;
+}
+#lista-android {
+    display: block;
+    columns: 2;
+    padding-inline-start: 40px;
+
+}
+#lista-android li {
+    font-size: 1.3em;
+    list-style-type: '\2714\00A0\00A0';
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #1a5c37;
+    max-width: 1000px;
+    margin: auto;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.461);
+}
+ footer p {
+    font-family: titulo;
+    font-weight: normal;
+
+}
+
+@media (max-width: 810px) {
+    .navbar {
+        margin-top: 10px;
+    }
+    header {
+        height: 280px;
+    }
+}
+
+.bigimg {
+    height: 400px;
+}

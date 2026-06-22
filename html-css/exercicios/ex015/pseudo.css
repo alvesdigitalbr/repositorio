@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    transition: 0.5s;
+}
+div {
+    display: inline-block;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+div:hover {
+    background-color: rgb(131, 195, 252);
+}
+
+.passaomouse {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 200px;
+}
+
+.passaomouse > p {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:hover > p {
+    display: block;
+}
+
+.passaomouse:hover {
+    background-color: rgb(197, 228, 255);   
+}
+
+#d1 > p {
+    display: none;
+}
+#d2 > p {
+    display: none;
+}
+#d3 > p {
+    display: none;
+}
+#d1:hover > p {
+    display: block;
+}
+#d2:hover > p {
+    display: block;
+}
+#d3:hover > p {
+    display: block;
+}   

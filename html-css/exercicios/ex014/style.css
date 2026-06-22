@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgba(173, 170, 170, 0.651);
+}
+p {
+    font-size: 20px;
+    }
+    h1 {
+        background-color: rgba(1, 130, 216, 0.781);
+        font: italic bolder 3em 'Work Sans', sans-serif;
+    }
