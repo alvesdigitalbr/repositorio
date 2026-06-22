@@ -175,3 +175,9 @@ footer {
 .bigimg {
     height: 400px;
 }
+
+@media (max-width: 450px) {
+    header {
+        height: 320px;
+    }
+}
