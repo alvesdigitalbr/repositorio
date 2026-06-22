@@ -178,6 +178,15 @@ footer {
 
 @media (max-width: 450px) {
     header {
-        height: 320px;
+        height: 400px;
+    }
+    #subtitle {
+        margin: auto;
+        width: auto;
+    }
+    .navbar {
+        margin: auto;
+        width: auto;
+
     }
 }
