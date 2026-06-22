@@ -1,2 +1,2 @@
 # repositorio
-Aprendendo a desenvolver sites.
+Aprendendo a desenvolver sites. Curso em Vídeo
