@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+}
+:root {
+    --h1font: "Passion One", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+header {
+    z-index: 99;
+    background-image: url(image/imageheader.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+header > h1 {
+    position: absolute;
+    transform: translate(10%,100%);
+    font-size: clamp(4em, 8vw, 8vw);
+    color: #ffffff;
+    text-shadow: 0px 0px 12px rgba(9, 196, 217, 0.419);
+}
+header > p {
+    
+}
