@@ -23,16 +23,63 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.884);
     height: 600px;
-    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 0px 40px;
+    border-radius: 0px 0px 30px 30px;
 }
-header > h1 {
-    position: absolute;
-    transform: translate(10%,100%);
+
+header h1 {
     font-size: clamp(4em, 8vw, 8vw);
     color: #ffffff;
     text-shadow: 0px 0px 12px rgba(9, 196, 217, 0.419);
 }
-header > p {
-    
+header p {
+    margin: 0px 0px 0px 100px;
+    color: #ffffff;
+    font-size: clamp(1em , 1.7vw , 1.7vw);
+    text-shadow: 0px 0px 12px rgba(9, 196, 217, 0.705);
+}
+
+main {
+    padding: 30px;
+    color: #000000;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#eu {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 12px rgba(9, 196, 217, 0.836);
+    border-radius: 10px 10px 30px 30px;
+}
+#eu h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+#eu p {
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.2em;
+}
+#eu a {
+    color: #09c4d9;
+    text-decoration: underline;
+}
+#porjects {
+    margin: auto;
+    justify-self: flex-end;
 }
