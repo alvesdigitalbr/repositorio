@@ -78,7 +78,23 @@ section {
     color: #09c4d9;
     text-decoration: underline;
 }
-#porjects {
-    margin: auto;
-    justify-self: flex-end;
+#projects {
+    padding: 10px;
+    background-color: #000000;
+    align-self: flex-end;
+    align-items: self-start;
+    color: #ffffff;
+    box-shadow: 0px 0px 12px rgba(9, 196, 217, 0.836);
+    border-radius: 10px 10px 30px 30px;
+}
+#projects h1 {
+    font-size: 2.5em;
+}
+#projects h2 {
+    margin-top: 10px;
+}
+
+
+#projects p {
+    font-size: 1.2em;
 }
