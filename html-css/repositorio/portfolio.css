@@ -7,9 +7,18 @@
     border: none;
     text-decoration: none;
     transition: 0.2 linear;
+    
 }
 :root {
     --h1font: "Passion One", sans-serif;
+    --boxshadow: 0px 0px 12px rgba(9, 196, 217, 0.836);
+    --textshadow: 0px 0px 12px rgba(9, 196, 217, 0.419);
+    --sizeh1: 2.5em;
+    --sizepbox: 1.2em;
+    --linkcolor: #09c4d9;
+    --colorp: #ffffff;
+    --radius: 20px 20px 10px 10px;
+
 }
 
 body {
@@ -36,65 +45,130 @@ header {
 header h1 {
     font-size: clamp(4em, 8vw, 8vw);
     color: #ffffff;
-    text-shadow: 0px 0px 12px rgba(9, 196, 217, 0.419);
+    text-shadow: var(--textshadow);
 }
 header p {
     margin: 0px 0px 0px 100px;
     color: #ffffff;
     font-size: clamp(1em , 1.7vw , 1.7vw);
-    text-shadow: 0px 0px 12px rgba(9, 196, 217, 0.705);
+    text-shadow: var(--textshadow);
 }
 
 main {
     padding: 30px;
     color: #000000;
 }
+section h1{ font-size: var(--sizeh1); text-shadow: var(--textshadow);}
 
-section {
-    display: flex;
-    flex-direction: column;
-}
+section h2 { font-size: 1.8em; }
 
-#eu {
+section p { font-size: var(--sizepbox); }
+
+section a { color: var(--linkcolor); font-size: var(--sizepbox);}
+section a:hover {text-decoration: underline; text-decoration-color: #ffffff; text-underline-offset: 1px;}
+
+section ul {list-style: none;}
+
+section div#top {
     display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    padding: 10px;
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 12px rgba(9, 196, 217, 0.836);
-    border-radius: 10px 10px 30px 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
 }
-#eu h1 {
-    font-size: 2.5em;
+div#top div#sobre {
     text-align: center;
-}
-#eu p {
-    text-align: justify;
-    text-align-last: center;
-    font-size: 1.2em;
-}
-#eu a {
-    color: #09c4d9;
-    text-decoration: underline;
-}
-#projects {
     padding: 10px;
+    border-radius: var(--radius);
+    height: fit-content;
+    width: 600px;
+    box-shadow: var(--boxshadow);
+    
+    color: var(--colorp);
     background-color: #000000;
-    align-self: flex-end;
-    align-items: self-start;
-    color: #ffffff;
-    box-shadow: 0px 0px 12px rgba(9, 196, 217, 0.836);
-    border-radius: 10px 10px 30px 30px;
 }
-#projects h1 {
-    font-size: 2.5em;
+
+div#top #projects {
+    text-align: center;
+    border-radius: var(--radius);
+    height: fit-content;
+    width: 600px;
+    height: fit-content;
+    box-shadow: var(--boxshadow);
+    padding: 10px;
+
+    color: var(--colorp);
+    background: #000000;
 }
-#projects h2 {
+
+#course {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#exer {
+    background-color: #000000;
+    border-radius: var(--radius);
+    height: fit-content;
+    width: fit-content;
+    box-shadow: var(--boxshadow);
+    padding: 10px;
+    color: var(--colorp);
+}
+#exer ul {
+    columns: 2;
+    column-gap: 40px;
+}
+
+#exer li {
+    break-inside: avoid;
+    margin-bottom: .4rem;
+    list-style: none;
+}
+
+#desa {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #000000;
+    border-radius: var(--radius);
+    height: fit-content;
+    width: fit-content;
+    box-shadow: var(--boxshadow);
+    padding: 10px;
+    color: var(--colorp);
+}
+.modulo {
+    flex: 1;
+    min-width: 220px;
+
+    background: #111;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.modulo ul {
+    list-style: none;
     margin-top: 10px;
 }
 
-
-#projects p {
-    font-size: 1.2em;
+.modulo li {
+    margin-bottom: 8px;
 }
+footer {
+    background-color: #000000;
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+    text-align: center;
+}
+footer h1 {
+    text-shadow: var(--textshadow);
+    font-size: var(--sizeh1);
+}
+footer p {
+}
+footer a { color: var(--linkcolor);}
+
