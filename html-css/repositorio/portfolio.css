@@ -105,7 +105,7 @@ div#top #projects {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -113,14 +113,15 @@ div#top #projects {
     background-color: #000000;
     border-radius: var(--radius);
     height: fit-content;
-    width: fit-content;
+    flex: 1;
+    min-width: 300px;
     box-shadow: var(--boxshadow);
     padding: 10px;
     color: var(--colorp);
 }
 #exer ul {
     columns: 2;
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 #exer li {
@@ -135,8 +136,8 @@ div#top #projects {
     flex-wrap: wrap;
     background-color: #000000;
     border-radius: var(--radius);
-    height: fit-content;
-    width: fit-content;
+    flex: 1;
+    min-width: 300px;
     box-shadow: var(--boxshadow);
     padding: 10px;
     color: var(--colorp);
@@ -168,10 +169,13 @@ footer h1 {
     text-shadow: var(--textshadow);
     font-size: var(--sizeh1);
 }
-footer p {
-}
 footer a { color: var(--linkcolor);}
 
 #titlemiddle {
     margin: 20px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+    #exer ul {
+        columns: 1; /* No celular, usa apenas 1 coluna para evitar a rolagem horizontal */
+    }
 }
