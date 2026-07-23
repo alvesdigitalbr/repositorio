@@ -105,7 +105,7 @@ div#top #projects {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -172,3 +172,6 @@ footer p {
 }
 footer a { color: var(--linkcolor);}
 
+#titlemiddle {
+    margin: 20px 0px 20px 0px;
+}
