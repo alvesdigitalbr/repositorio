@@ -102,64 +102,6 @@ div#top #projects {
     background: #000000;
 }
 
-#course {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-#exer {
-    background-color: #000000;
-    border-radius: var(--radius);
-    height: fit-content;
-    flex: 1;
-    min-width: 300px;
-    box-shadow: var(--boxshadow);
-    padding: 10px;
-    color: var(--colorp);
-}
-#exer ul {
-    columns: 2;
-    column-gap: 20px;
-}
-
-#exer li {
-    break-inside: avoid;
-    margin-bottom: .4rem;
-    list-style: none;
-}
-
-#desa {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    background-color: #000000;
-    border-radius: var(--radius);
-    flex: 1;
-    min-width: 300px;
-    box-shadow: var(--boxshadow);
-    padding: 10px;
-    color: var(--colorp);
-}
-.modulo {
-    flex: 1;
-    min-width: 220px;
-
-    background: #111;
-    border-radius: 15px;
-    padding: 15px;
-}
-
-.modulo ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.modulo li {
-    margin-bottom: 8px;
-}
 footer {
     background-color: #000000;
     border-radius: 30px 30px 0px 0px;
