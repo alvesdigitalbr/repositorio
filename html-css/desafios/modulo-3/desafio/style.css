@@ -68,6 +68,9 @@ p {
     line-height: 2em;
     padding-left: 50px;
 }
+.images {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
 
 #image1 {
     display: block;
