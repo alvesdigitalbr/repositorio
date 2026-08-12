@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+}
+body {
+    background: #ffffff url(image/background-2426328_640.jpg) center no-repeat;
+    background-size: cover;
+
+    min-height: 100dvh;
+}
+main {
+    /* background */
+}
+    /* buttons */
+.buttons {
+    /* display */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* size */
+    width: 5.625rem;
+
+    /* position */
+    position: relative;
+    left: 85%;
+    top: 1.25rem;
+    transform: translate(-85%);
+
+}
+.buttons > a {
+    /* size */
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 15px;
+
+}
+.iframeone {
+    background: url(image/button-github.png) center no-repeat;
+    background-size: cover;
+}
+.iframetwo {
+    background: url(image/button-github.png) center no-repeat;
+    background-size: cover;
+    
+    border-color: rgba(128, 128, 128, 0.450);
+}
+
+    /* Cellphone */
+.menuphone {
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* background */
+    background: url(image/cell2.png) center no-repeat;
+
+    /* size */
+    min-height: 420px;
+
+}
+.menuphone > iframe {
+    /* size */
+    width: 159px;
+    height: 270px;
+    border-radius: 5px;
+
+    margin-top: 20px;
+    
+}
+.menuphone a {
+    /* background */
+    background-color: rgb(196, 196, 196);
+
+
+
+    /* size */
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 708px){
+    /* Buttons */
+    .buttons {
+        /* display */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons > a {
+    /* size */
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 10px;
+
+}
+    
+    /* Cellphone */
+    .menuphone {
+        
+        /* background */
+        background: url(image/cell3.png) center no-repeat;
+
+        /* size */
+        min-height: 550px;
+    }
+    .menuphone > iframe {
+        width: 241px;
+        height: 420px;
+    }
+    .menuphone > a {
+        width: 70px;
+        height: 35px;
+    }
+}
