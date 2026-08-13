@@ -8,30 +8,29 @@
     border: 0;
 }
 body {
-    background: #ffffff url(image/background-2426328_640.jpg) center no-repeat;
+    background: #ffffff url(image/windows-10-4k-download-hd-for-desktop-wallpaper-preview.jpg) center no-repeat;
     background-size: cover;
 
     min-height: 100dvh;
 }
 main {
-    /* background */
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+
 }
     /* buttons */
 .buttons {
     /* display */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
 
-    /* size */
-    width: 5.625rem;
-
-    /* position */
-    position: relative;
-    left: 85%;
-    top: 1.25rem;
-    transform: translate(-85%);
 
 }
 .buttons > a {
@@ -66,6 +65,7 @@ main {
     background: url(image/cell2.png) center no-repeat;
 
     /* size */
+    min-width: 275px;
     min-height: 420px;
 
 }
@@ -93,6 +93,12 @@ main {
 }
 
 @media screen and (min-width: 708px){
+    main {
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+    
+    
     /* Buttons */
     .buttons {
         /* display */
