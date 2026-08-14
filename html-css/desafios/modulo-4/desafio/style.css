@@ -8,12 +8,13 @@
     border: 0;
 }
 body {
-    background: #ffffff url(image/windows-10-4k-download-hd-for-desktop-wallpaper-preview.jpg) center no-repeat;
+    background: #ffffff url(image/background-white.jpg) center no-repeat;
     background-size: cover;
 
     min-height: 100dvh;
 }
 main {
+    min-height: 100dvh;
 
     /* display */
     display: flex;
@@ -28,7 +29,7 @@ main {
 .buttons {
     /* display */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
 
 
@@ -38,18 +39,14 @@ main {
     width: 2.5em;
     height: 2.5em;
     border-radius: 15px;
+    
 
 }
-.iframeone {
+.button-iframe {
     background: url(image/button-github.png) center no-repeat;
     background-size: cover;
 }
-.iframetwo {
-    background: url(image/button-github.png) center no-repeat;
-    background-size: cover;
-    
-    border-color: rgba(128, 128, 128, 0.450);
-}
+
 
     /* Cellphone */
 .menuphone {
@@ -80,19 +77,26 @@ main {
 }
 .menuphone a {
     /* background */
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(0, 0, 0, 0.7);
 
 
 
     /* size */
-    width: 40px;
-    height: 20px;
+    width: 35px;
+    height: 15px;
     border-radius: 30px;
 
     margin-top: 20px;
 }
 
+
 @media screen and (min-width: 708px){
+    body {
+        background: url(image/bg-white-708.jpg) center no-repeat;
+        background-size: cover;
+
+    }
+    
     main {
         flex-direction: row-reverse;
         gap: 50px;
@@ -104,6 +108,7 @@ main {
         /* display */
         flex-direction: column;
         gap: 10px;
+        
     }
 
     .buttons > a {
@@ -128,7 +133,13 @@ main {
         height: 420px;
     }
     .menuphone > a {
-        width: 70px;
-        height: 35px;
+        width: 60px;
+        height: 25px;
+    }
+}
+@media screen and (min-width: 1110px){
+    body {
+        background: url(image/bg-white-1110.jpg);
+        background-size: cover;
     }
 }
