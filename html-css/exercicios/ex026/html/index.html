@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form responsive</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/medium-screens.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hcontainer">
+        <div class="hlogo">
+            <a href="https://github.com/alvesdigitalbr" target="_blank" aria-label="Acessar perfil do desenvolvedor no GitHub">
+                <img src="../images/logo-46.png" alt="Image da logo do desenvolvedor, e é um link para ir ao perfil do criador">
+            </a>
+        </div>
+    </header>
+    <main class="mcontainer">
+        <section class="form-section">
+            <div class="area-image">
+                <img src="../images/pexels-annevandervalk-33928674 (1).jpg" alt="imagem de um prédio marrom, com janelas olhado de baixo">
+            </div>
+            <div class="area-login">
+                <h2>TaskFlow</h2>
+                <p>Faça login para continuar de onde parou e transformar suas ideias em resultados.</p>
+                <form action="cadastro.php" autocomplete="on" method="get" class="area-cadastro">
+                    <div class="login-group">
+                        <label for="ilogin">Email:</label>
+                        <input type="email" name="nlogin" id="ilogin" placeholder="email" required size="40">
+                    </div>
+                    <div class="login-group">
+                        <label for="ipassword">Senha:</label>
+                        <input type="password" name="npassword" id="ipassword" placeholder="password" required minlength="6" maxlength="14">
+                    </div>
+                    <input type="submit" value="Enviar" class="insubmit">
+                    <p>Ainda não tem uma conta? Cadastre-se gratuitamente.</p>
+                    <p>Ao continuar, você concorda com nossos Termos de Uso e Política de Privacidade.</p>
+                    
+                </form>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
