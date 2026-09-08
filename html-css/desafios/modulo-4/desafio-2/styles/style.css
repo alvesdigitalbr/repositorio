@@ -4,25 +4,26 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     text-decoration: none;
-    outline: none;
+}
+*, *::before, *::after {
     box-sizing: border-box;
 }
+
 :root {
     font-size: 62.5%;
-    
-    /* font */
+
     --title: 'Poppins', sans-serif;
     --text: 'Inter', sans-serif;
     --colortitle: #a54d2ad8;
     --accent: #a33b12d8;
+    --color-secondary: #6ec5ff;
 }
 
 body {
     min-height: 100dvh;
 
-    background: skyblue;
+    background: var(--color-secondary);
 }
 /* Header */
 .hcontainer {
@@ -46,7 +47,10 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 20px 40px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 }
-
+.area-image {
+    flex: 1;
+    overflow: hidden;
+}
 .area-image img {
     width: 100%; 
     height: 100px; 
@@ -60,22 +64,28 @@ body {
     
     padding: 1rem;
 }
-.area-login h2 {
-    font-size: 2.5em;
+
+.area-login h1 {
+    font-size: 4em;
     font-family: var(--title);
     font-weight: 600;
     padding-left: 0.5em;
-    color: #a3421cd8;
+    color: var(--accent);
 }
 .area-login p {
     text-indent: 1rem;
     font-family: var(--text);
     font-weight: 400;
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: center;
     line-height: 1.8rem;
     
     margin: 1em 0;
+}
+.area-login a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--colortitle);
 }
 .login-group {
     font-size: 1.5rem;
@@ -93,12 +103,14 @@ body {
     right: 0;
     height: 100%;
     width: 5px;
-    background: skyblue;
+    background: var(--color-secondary);
 }
 .login-group input {
+    width: 100%;
     background: transparent;
     font-family: var(--text);
-    border: none; 
+    border: none;
+    outline: none;
 }
 .insubmit {
     display: block;
@@ -114,5 +126,5 @@ body {
 }
 .insubmit:hover {
     transition: 0.3s linear;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
