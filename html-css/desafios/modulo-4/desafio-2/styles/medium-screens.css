@@ -1,0 +1,47 @@
+
+@media screen and (min-width: 470px) {
+    .area-image img {
+        height: 200px;
+    }
+    
+}
+
+@media screen and (min-width: 640px) {
+    .mcontainer {
+        width: 70%;
+        max-width: 900px;
+    }
+    .form-section {
+        flex-direction: row;
+    }
+    .area-image, .area-login {
+        flex: 1;
+    }
+    .area-image img {
+        height: 100%;
+        border-radius: 30px 0 0 30px;
+    }
+
+    .area-login h2 {
+        font-size: 3.5rem;
+    }
+    .area-login p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+@media screen and (min-width: 940px) {
+        .area-login h2 {
+        font-size: 4rem;
+    }
+    .area-login p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .login-group {
+    font-size: 2rem;
+    }
+    .insubmit {
+    font-size: 2.5rem;
+    }
+}
