@@ -22,7 +22,6 @@
 
 body {
     min-height: 100dvh;
-
     background: var(--color-secondary);
 }
 /* Header */
@@ -36,7 +35,6 @@ body {
 .mcontainer {
     width: 90%;
     margin: auto;
-
 } 
 
 .form-section {
